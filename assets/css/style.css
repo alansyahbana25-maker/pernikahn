@@ -1,0 +1,65 @@
+/* style.css */
+
+/* Custom Scrollbar for Main App */
+::-webkit-scrollbar {
+    width: 6px;
+}
+::-webkit-scrollbar-track {
+    background: #111111; 
+}
+::-webkit-scrollbar-thumb {
+    background: #D4AF37; 
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #F3E5AB; 
+}
+
+/* Custom Scrollbar for Guestbook Feed */
+.custom-scrollbar::-webkit-scrollbar {
+    width: 4px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 4px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background: rgba(212, 175, 55, 0.5); 
+    border-radius: 4px;
+}
+
+/* Loader Animation */
+.loader-ring {
+    animation: ringGlow 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes ringGlow {
+    from { filter: drop-shadow(0 0 2px rgba(212, 175, 55, 0.5)); transform: scale(0.9); }
+    to { filter: drop-shadow(0 0 15px rgba(212, 175, 55, 1)); transform: scale(1.1); }
+}
+
+/* Parallax adjustment for bg */
+.parallax-bg {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Music Disc Spin Animation */
+.loop-spin {
+    animation: spin 4s linear infinite;
+}
+.loop-spin.paused {
+    animation-play-state: paused;
+}
+
+/* Hide scroll class */
+.hidden-scroll {
+    scrollbar-width: thin; /* Firefox */
+}
+
+/* Utilities */
+.select-none {
+    user-select: none;
+}
