@@ -201,7 +201,7 @@ document.addEventListener("DOMContentLoaded", () => {
             if (navigator.share) {
                 try {
                     await navigator.share({
-                        title: 'Undangan Pernikahan Romeo & Juliet',
+                        title: 'Undangan Pernikahan Naufal & Aisha',
                         text: 'Kepada Yth. Bapak/Ibu/Saudara/i. Kami mengundang Anda untuk hadir di acara pernikahan kami.',
                         url: window.location.href
                     });

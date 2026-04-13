@@ -46,6 +46,12 @@
     background-size: cover;
 }
 
+@media (max-width: 768px) {
+    .parallax-bg {
+        background-attachment: scroll;
+    }
+}
+
 /* Music Disc Spin Animation */
 .loop-spin {
     animation: spin 4s linear infinite;
