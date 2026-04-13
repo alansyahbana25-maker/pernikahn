@@ -52,6 +52,28 @@
     }
 }
 
+/* Ensure no horizontal scroll */
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    max-width: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Force centering for everything */
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
 /* Music Disc Spin Animation */
 .loop-spin {
     animation: spin 4s linear infinite;
